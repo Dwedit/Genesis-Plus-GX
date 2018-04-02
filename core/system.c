@@ -190,8 +190,11 @@ void audio_shutdown(void)
   }
 }
 
+extern int8 audio_hard_disable;
+
 int audio_update(int16 *buffer)
 {
+	if (audio_hard_disable) return 0;
   /* run sound chips until end of frame */
   int size = sound_update(mcycles_vdp);
 
@@ -315,7 +318,7 @@ void system_init(void)
   sound_init();
 }
 
-void system_reset(void)
+void system_reset()
 {
   gen_reset(1);
   io_reset();

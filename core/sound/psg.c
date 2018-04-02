@@ -452,9 +452,12 @@ void psg_end_frame(unsigned int clocks)
   }
 }
 
+extern int8 audio_hard_disable;
+
 static void psg_update(unsigned int clocks)
 {
   int i, timestamp, polarity;
+  if (audio_hard_disable) return;
 
   for (i=0; i<4; i++)
   {

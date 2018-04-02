@@ -42,9 +42,9 @@
  * If you define INLINE in makefile or osd.h, it will override this value.
  * NOTE: not enabling inline functions will SEVERELY slow down emulation.
  */
-#ifndef INLINE
+#undef INLINE
 #define INLINE static __inline__
-#endif /* INLINE */
+//#endif /* INLINE */
 
 /* Alignment macros for cross compiler compatibility */
 #if defined(_MSC_VER)

@@ -43,6 +43,9 @@
     <Filter Include="Source Files\tremor">
       <UniqueIdentifier>{c4a5e1da-1ff3-4c81-893c-97364ed7ed4b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Libretro-common">
+      <UniqueIdentifier>{7f67fb4c-a03a-4b22-81d6-5a5ef201e1f8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\core\cart_hw\svp\svp.c">
@@ -65,9 +68,6 @@
     </ClCompile>
     <ClCompile Include="..\..\..\core\cart_hw\sms_cart.c">
       <Filter>Source Files\cart_hw</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\core\input_hw\xe_a1p.c">
-      <Filter>Source Files\input_hw</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\core\input_hw\activator.c">
       <Filter>Source Files\input_hw</Filter>
@@ -236,6 +236,48 @@
     </ClCompile>
     <ClCompile Include="..\..\..\core\tremor\vorbisfile.c">
       <Filter>Source Files\tremor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\core\input_hw\graphic_board.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\core\input_hw\xe_1ap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\core\sound\ym3438.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\RetroArch\libretro-common\streams\file_stream.c">
+      <Filter>Source Files\Libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\RetroArch\libretro-common\streams\file_stream_transforms.c">
+      <Filter>Source Files\Libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\RetroArch\libretro-common\streams\interface_stream.c">
+      <Filter>Source Files\Libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\RetroArch\libretro-common\streams\memory_stream.c">
+      <Filter>Source Files\Libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\RetroArch\libretro-common\streams\stdin_stream.c">
+      <Filter>Source Files\Libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\RetroArch\libretro-common\streams\trans_stream.c">
+      <Filter>Source Files\Libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\RetroArch\libretro-common\streams\trans_stream_pipe.c">
+      <Filter>Source Files\Libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\RetroArch\libretro-common\vfs\vfs_implementation.c">
+      <Filter>Source Files\Libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\RetroArch\libretro-common\compat\fopen_utf8.c">
+      <Filter>Source Files\Libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\RetroArch\libretro-common\encodings\encoding_utf.c">
+      <Filter>Source Files\Libretro-common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\RetroArch\libretro-common\compat\compat_strl.c">
+      <Filter>Source Files\Libretro-common</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

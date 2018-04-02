@@ -1999,9 +1999,13 @@ unsigned int YM2612Read(void)
   return ym2612.OPN.ST.status;
 }
 
+extern int8 audio_hard_disable;
+
+
 /* Generate samples for ym2612 */
 void YM2612Update(int *buffer, int length)
 {
+	if (audio_hard_disable) return;
   int i;
   int lt,rt;
 
