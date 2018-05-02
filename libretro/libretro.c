@@ -1991,7 +1991,11 @@ void retro_set_input_state(retro_input_state_t cb) { input_state_cb = cb; }
 
 void retro_get_system_info(struct retro_system_info *info)
 {
+#ifdef _DEBUG
+   info->library_name = "!DEBUG! Genesis Plus GX";
+#else
    info->library_name = "Genesis Plus GX";
+#endif
 #ifndef GIT_VERSION
 #define GIT_VERSION ""
 #endif
